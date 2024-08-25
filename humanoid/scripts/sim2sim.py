@@ -40,7 +40,7 @@ import torch
 
 
 class cmd:
-    vx = 0.4
+    vx = 5
     vy = 0.0
     dyaw = 0.0
 

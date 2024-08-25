@@ -55,8 +55,8 @@ class XBotLCfg(LeggedRobotCfg):
         torque_limit = 0.85
 
     class asset(LeggedRobotCfg.asset):
-        file = '{LEGGED_GYM_ROOT_DIR}/resources/robots/XBot/urdf/XBot-L.urdf'
-
+        file = '{LEGGED_GYM_ROOT_DIR}/resources/robots/XBot/urdf/fudan_humanoid.urdf'
+        # file = '{LEGGED_GYM_ROOT_DIR}/resources/robots/XBot/urdf/XBot-L.urdf'
         name = "XBot-L"
         foot_name = "ankle_roll"
         knee_name = "knee"
@@ -102,16 +102,16 @@ class XBotLCfg(LeggedRobotCfg):
 
         default_joint_angles = {  # = target angles [rad] when action = 0.0
             'left_leg_roll_joint': 0.,
-            'left_leg_yaw_joint': 0.,
-            'left_leg_pitch_joint': 0.,
-            'left_knee_joint': 0.,
-            'left_ankle_pitch_joint': 0.,
+            'left_leg_yaw_joint': -0.22,
+            'left_leg_pitch_joint': 0.47,
+            'left_knee_joint': 1.13,
+            'left_ankle_pitch_joint': -0.7,
             'left_ankle_roll_joint': 0.,
             'right_leg_roll_joint': 0.,
-            'right_leg_yaw_joint': 0.,
-            'right_leg_pitch_joint': 0.,
-            'right_knee_joint': 0.,
-            'right_ankle_pitch_joint': 0.,
+            'right_leg_yaw_joint': 0.22,
+            'right_leg_pitch_joint': -0.47,
+            'right_knee_joint': 1.13,
+            'right_ankle_pitch_joint': 0.7,
             'right_ankle_roll_joint': 0.,
         }
 

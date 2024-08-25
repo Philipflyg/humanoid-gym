@@ -240,7 +240,7 @@ class XBotLFreeEnv(LeggedRobot):
             dq,  # 12D
             self.actions,   # 12D
             self.base_ang_vel * self.obs_scales.ang_vel,  # 3
-            self.base_euler_xyz * self.obs_scales.quat,  # 3
+            self.base_euler_xyz * self.obs_scales.quat * 0.0,  # 3
         ), dim=-1)
 
         if self.cfg.terrain.measure_heights:
