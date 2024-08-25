@@ -34,6 +34,15 @@
           rgba="0.89804 0.91765 0.92941 1" />
       </material>
     </visual>
+    <!-- <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/base_link.STL" />
+      </geometry>
+    </collision> -->
     <collision>
       <origin
         xyz="0 0. 0.1"
@@ -198,6 +207,14 @@
           filename="../meshes/left_leg_yaw_link.STL" />
       </geometry>
     </collision> -->
+    <collision>
+      <origin 
+        xyz="0 0 -0.25" 
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.30"/>
+      </geometry>
+    </collision>
   </link>
   <joint
     name="left_leg_yaw_joint"
@@ -256,6 +273,14 @@
           filename="../meshes/left_knee_link.STL" />
       </geometry>
     </collision> -->
+    <collision>
+      <origin 
+        xyz="0 0 -0.21" 
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.28"/>
+      </geometry>
+    </collision>
   </link>
   <joint
     name="left_knee_joint"
@@ -602,6 +627,14 @@
           filename="../meshes/right_leg_yaw_link.STL" />
       </geometry>
     </collision> -->
+    <collision>
+      <origin 
+        xyz="0 0 -0.25" 
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.04" length="0.30"/>
+      </geometry>
+    </collision>
   </link>
   <joint
     name="right_leg_yaw_joint"
@@ -660,6 +693,14 @@
           filename="../meshes/right_knee_link.STL" />
       </geometry>
     </collision> -->
+    <collision>
+      <origin 
+        xyz="0 0 -0.21" 
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.28"/>
+      </geometry>
+    </collision>
   </link>
   <joint
     name="right_knee_joint"
